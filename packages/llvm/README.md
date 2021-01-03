@@ -2,13 +2,16 @@ These files are based on [https://github.com/ocaml/opam-repository/tree/master/p
 
 ```
 #
+pkg_repo_url='https://raw.githubusercontent.com/ocaml/opam-repository/master/packages'
+base_url="$pkg_repo_url/llvm/llvm.10.0.0"
+
 cd llvm.10.0.0+rillc
-wget https://raw.githubusercontent.com/ocaml/opam-repository/master/packages/llvm/llvm.10.0.0/opam
+wget "base_url/opam"
 
 #
 cd files
 for f in 'META.patch' 'fix-shared.patch' 'install.sh' 'link-META.patch'; do
-    wget "https://raw.githubusercontent.com/ocaml/opam-repository/master/packages/llvm/llvm.10.0.0/files/$f" -O $f
+    wget "$base_url/files/$f" -O $f
 done
 ```
 
