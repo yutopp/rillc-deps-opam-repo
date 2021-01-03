@@ -1,5 +1,7 @@
 These files are based on [https://github.com/ocaml/opam-repository/tree/master/packages/llvm](https://github.com/ocaml/opam-repository/tree/master/packages/llvm).
 
+A difference between this repository and the original repository is that a linking option is modified to provide objects for only static build.
+
 ```
 #
 pkg_repo_url='https://raw.githubusercontent.com/ocaml/opam-repository/master/packages'
