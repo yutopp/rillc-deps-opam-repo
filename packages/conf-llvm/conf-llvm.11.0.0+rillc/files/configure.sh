@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-version=${1/%.?.?/}
+version=${1/%.?.?\+rillc/}
 
 if hash brew 2>/dev/null; then
     brew_llvm_config="$(brew --cellar)"/llvm*/${version}*/bin/llvm-config

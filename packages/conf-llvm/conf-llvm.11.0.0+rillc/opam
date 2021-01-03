@@ -21,5 +21,6 @@ depexts: [
   ["devel/llvm11"] {os = "freebsd"}
 ]
 synopsis: "This package is a fork of the original conf-llvm package 'https://github.com/ocaml/opam-repository/tree/master/packages/conf-llvm' and maintained by yutopp for rillc."
-extra-files: ["configure.sh" "md5=c684ff1f4e2fee80154115d172ca49d6"]
+extra-files: ["configure.sh" "md5=242a0d92a16a03216c72db61d2e57471"]
 flags: conf
+version: "11.0.0+rillc"
