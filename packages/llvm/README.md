@@ -11,3 +11,8 @@ for f in 'META.patch' 'fix-shared.patch' 'install.sh' 'link-META.patch'; do
     wget "https://raw.githubusercontent.com/ocaml/opam-repository/master/packages/llvm/llvm.10.0.0/files/$f" -O $f
 done
 ```
+
+```
+cat files/install.sh | md5sum
+cat files/META.patch | md5sum
+```
